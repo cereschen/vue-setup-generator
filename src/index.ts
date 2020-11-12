@@ -17,6 +17,6 @@ export function useGenerator<T>(gen: () => Generator<T>) {
       }
     }
   }
-  return obj as T
+  return obj as Required<Pick<T, keyof T>>
 }
 
