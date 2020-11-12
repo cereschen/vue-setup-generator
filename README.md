@@ -33,7 +33,7 @@ export default defineComponent({
 ## FAQ
 ### type check?
 `Work well`
-### hidden danger?
+### pitfall?
 Only `object` will merge in yield
 Not allow duplicate key
 ```ts

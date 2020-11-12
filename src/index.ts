@@ -1,4 +1,4 @@
-export function useGenerator<T, K = Extract<T, Record<any, any>>>(gen: () => Generator<T>) {
+export function useGenerator<T>(gen: () => Generator<T>) {
   if (Object.prototype.toString.call(gen) !== "[object GeneratorFunction]") {
     throw new Error('[vue-setup-generator]: please privide a GeneratorFunction')
   }
@@ -17,6 +17,6 @@ export function useGenerator<T, K = Extract<T, Record<any, any>>>(gen: () => Gen
       }
     }
   }
-  return obj as Required<Pick<K, keyof K>>
+  return obj as T
 }
 

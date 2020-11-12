@@ -1,6 +1,6 @@
 {
   "name": "vue-setup-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use generator instead of setup in vue",
   "main": "dist/index.js",
   "keywords": ["vue","setup","generator"],
